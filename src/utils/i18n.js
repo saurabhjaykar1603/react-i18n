@@ -1,7 +1,7 @@
 import languageConfig from "./lang.json";
 
 const i18n = (keyword) => {
-  const lang = "en";
+  const lang = localStorage.getItem("lang") || "en";
   return languageConfig[lang][keyword];
 };
 
