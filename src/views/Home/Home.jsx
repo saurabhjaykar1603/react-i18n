@@ -4,7 +4,7 @@ import i18n from "../../utils/i18n.js";
 
 function Home() {
   const [lang, setLang] = useState("en");
-  const usersCount = 15;
+  const usersCount = 155;
   return (
     <>
       <div
@@ -20,12 +20,12 @@ function Home() {
           <h5 className="text-center ">{i18n("greetingMessage")}</h5>
           <h5 className="text-center mt-4 ">{i18n("endMessage")}</h5>
           <p className="text-center mt-4 fw-bold">
-            {usersCount} are learning in this session
+            {i18n("usersStatMessage", "<studentCount>", usersCount)}
           </p>
           <div className="container w-50 mt-4">
             <form>
               <select
-              className="form-select"
+                className="form-select"
                 value={localStorage.getItem("lang")}
                 onChange={(e) => {
                   localStorage.setItem("lang", e.target.value);
