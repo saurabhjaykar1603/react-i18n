@@ -1,6 +1,7 @@
 import languageConfig from "./lang.json";
 
-const i18n = ({ keyword, lang }) => {
+const i18n = (keyword) => {
+  const lang = "en";
   return languageConfig[lang][keyword];
 };
 
