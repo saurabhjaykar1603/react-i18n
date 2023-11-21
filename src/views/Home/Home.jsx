@@ -18,6 +18,7 @@ function Home() {
           <h3 className="text-center fw-bold">{i18n("welcomeMessage")}</h3>
           <h4 className="text-center my-4">{i18n("normalMessage")}</h4>
           <h5 className="text-center ">{i18n("greetingMessage")}</h5>
+          <h5 className="text-center mt-4 ">{i18n("endMessage")}</h5>
           <p className="text-center mt-4 fw-bold">
             {usersCount} are learning in this session
           </p>
