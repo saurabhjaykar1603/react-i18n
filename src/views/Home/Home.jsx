@@ -7,21 +7,22 @@ function Home() {
   const usersCount = 155;
   return (
     <>
-      <div
-        className="container mt-4 text-center fs-2 text-white fw-bold py-2 px-5 bg-dark rounded"
-        style={{ width: "28rem" }}
-      >
+      <div className="  text-center fs-2 text-white fw-bold py-2 px-5 bg-primary shadow">
         React i18n here...
       </div>
-      <div className="card mx-auto  mt-5" style={{ width: "34rem" }}>
+      <div
+        className="card mx-auto card-container mt-5"
+        style={{ width: "44rem" }}
+      >
         <div className="card-body">
-          <h3 className="text-center fw-bold">{i18n("welcomeMessage")}</h3>
-          <h4 className="text-center my-4">{i18n("normalMessage")}</h4>
-          <h5 className="text-center ">{i18n("greetingMessage")}</h5>
-          <h5 className="text-center mt-4 ">{i18n("endMessage")}</h5>
-          <p className="text-center mt-4 fw-bold">
+          <h1 className="text-center fw-bold">{i18n("welcomeMessage")}</h1>
+          <h4 className="text-center my-5">{i18n("normalMessage")}</h4>
+          <h2 className="text-center fw-bold">{i18n("greetingMessage")}</h2>
+          <h4 className="text-center mt-5 ">{i18n("endMessage")}</h4>
+          <p className="text-center mt-5 fw-bold">
             {i18n("usersStatMessage", "<studentCount>", usersCount)}
           </p>
+          <p className="mt-4 text-center text-primary fw-bold">{i18n("contactNumber")}</p>
           <div className="container w-50 mt-4">
             <form>
               <select
