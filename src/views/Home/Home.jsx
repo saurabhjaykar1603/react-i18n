@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <div className="  text-center fs-2 text-white fw-bold py-2 px-5 bg-primary shadow">
-        React i18n here...
+        React i18n here....
       </div>
       <div
         className="card mx-auto card-container mt-5"
